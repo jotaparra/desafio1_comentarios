@@ -15,45 +15,30 @@
 </head>
 
 <body>
-
     <div class="container">
-    <form class="pt-5">
-        <div class="mb-3">
-            <textarea class="form-control" id="comments" placeholder="Escribe tu comentario"
-                required rows="5" cols="30"></textarea>
+        <div class="row justify-content-center">
+            <div class="pt-5 col-10">
+                <textarea class="form-control" id="comment" placeholder="Escribe tu comentario" required rows="5" cols="30"></textarea>
+            </div>
+            <div class="pt-2 col-10 text-right">
+                <button class="btn btn-info " id="boton" onclick="guardar()">Enviar comentario</button>
+            </div>
         </div>
-        <button class="btn btn-info" id="boton" onclick="enviar()">Enviar comentario</button>
-    </form>
+        <div class="row justify-content-center">
+            <div class="pt-5 col-10">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col"><h5>Comentarios</h5></th>
+                            <th scope="col"><h5>Editar</h5></th>
+                        </tr>
+                    </thead>
+                    <tbody id='tabla'>
 
-
-
-<div class="timeline pt-5">
-
-    
-
-</div>
-
-</div>
-    <div class="container">
-        <h5>Agregar usuarios!</h5>
-        <input type="text" id="nombre" placeholder="nombre" class="form-control my-3">
-        <input type="text" id="apellido" placeholder="apellido" class="form-control my-3">
-        <input type="text" id="fecha" placeholder="fecha" class="form-control my-3">
-        <button class="btn btn-info" id="boton" onclick="guardar()">Guardar</button>
-
-        <table class="table">
-            <thead>
-                <tr>
-                    <th scope="col">id</th>
-                    <th scope="col">First</th>
-                    <th scope="col">Last</th>
-                    <th scope="col">Born</th>
-                    <th scope="col">Editar</th>
-                </tr>
-            </thead>
-            <tbody id='tabla'>
-            </tbody>
-        </table>
+                    </tbody>
+                </table>
+            </div>
+        </div>
 
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
