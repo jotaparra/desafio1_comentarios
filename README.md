@@ -1,5 +1,5 @@
 # COMENTEMOS
-![]()
+![img-comentemos](seccion_comentarios.png)
 
 ### Definición
 
